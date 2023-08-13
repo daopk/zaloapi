@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "eslint .",
     "build": "pnpm --filter './packages/**' build",
-    "bumpp": "bumpp packages/*/package.json --no-commit --no-tag --no-push",
+    "bumpp": "bumpp packages/*/package.json",
     "release": "pnpm bumpp && pnpm -r publish --access public"
   },
   "devDependencies": {
