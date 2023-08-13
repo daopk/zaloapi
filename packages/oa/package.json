@@ -1,0 +1,34 @@
+{
+  "name": "@zaloapi/oa",
+  "type": "module",
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "tsup"
+  },
+  "dependencies": {
+    "@zaloapi/shared": "workspace:^"
+  },
+  "devDependencies": {
+    "ohash": "^1.1.2",
+    "tsup": "^7.1.0"
+  }
+}

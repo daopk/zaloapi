@@ -1,0 +1,33 @@
+{
+  "name": "@zaloapi/shared",
+  "type": "module",
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "tsup"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "axios": "^1.4.0",
+    "https-proxy-agent": "^7.0.1",
+    "tsup": "^7.1.0"
+  }
+}
