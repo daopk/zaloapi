@@ -6,16 +6,16 @@ const proxyMap = new Map<string, HttpsProxyAgent<string>>()
 
 export async function fetch<T = any>(url: string, config: AxiosRequestConfig = {}) {
   // eslint-disable-next-line n/prefer-global/process
-  const HTTPS_PROXY = process.env.HTTPS_PROXY
+  const ZALOAPI_PROXY = process.env.ZALOAPI_PROXY
   let httpsAgent: HttpsProxyAgent<string> | undefined
 
-  if (HTTPS_PROXY) {
-    if (proxyMap.has(HTTPS_PROXY)) {
-      httpsAgent = proxyMap.get(HTTPS_PROXY)
+  if (ZALOAPI_PROXY) {
+    if (proxyMap.has(ZALOAPI_PROXY)) {
+      httpsAgent = proxyMap.get(ZALOAPI_PROXY)
     }
     else {
-      httpsAgent = new HttpsProxyAgent(HTTPS_PROXY)
-      proxyMap.set(HTTPS_PROXY, httpsAgent)
+      httpsAgent = new HttpsProxyAgent(ZALOAPI_PROXY)
+      proxyMap.set(ZALOAPI_PROXY, httpsAgent)
     }
   }
 
