@@ -2,6 +2,10 @@
   "name": "@zaloapi/social",
   "type": "module",
   "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daopk/zaloapi.git"
+  },
   "exports": {
     ".": {
       "require": {
