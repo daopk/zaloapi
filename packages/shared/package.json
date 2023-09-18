@@ -29,8 +29,10 @@
     "prepublishOnly": "tsup"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.1.2",
     "@types/node": "^18",
     "axios": "^1.4.0",
+    "crypto-js": "^4.1.1",
     "https-proxy-agent": "^7.0.1",
     "tsup": "^7.1.0"
   }

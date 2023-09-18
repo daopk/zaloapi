@@ -36,12 +36,18 @@ importers:
 
   packages/shared:
     devDependencies:
+      '@types/crypto-js':
+        specifier: ^4.1.2
+        version: 4.1.2
       '@types/node':
         specifier: ^18
         version: 18.17.1
       axios:
         specifier: ^1.4.0
         version: 1.4.0
+      crypto-js:
+        specifier: ^4.1.1
+        version: 4.1.1
       https-proxy-agent:
         specifier: ^7.0.1
         version: 7.0.1
@@ -469,6 +475,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: true
+
+  /@types/crypto-js@4.1.2:
+    resolution: {integrity: sha512-t33RNmTu5ufG/sorROIafiCVJMx3jz95bXUMoPAZcUD14fxMXnuTzqzXZoxpR0tNx2xpw11Dlmem9vGCsrSOfA==}
     dev: true
 
   /@types/json-schema@7.0.12:
@@ -986,6 +996,10 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: true
+
+  /crypto-js@4.1.1:
+    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
     dev: true
 
   /debug@3.2.7:
