@@ -1,6 +1,7 @@
-import { sha256base64 } from 'ohash'
 import { fetch } from '@zaloapi/shared'
 import { oauthV4BaseURL } from './constant'
+
+export { getCodeChallenge } from '@zaloapi/shared'
 
 export interface GetAccessTokenBodyFromRefreshToken {
   grant_type: 'refresh_token'
@@ -30,8 +31,4 @@ export function getAccessToken(secret_key: string, body: GetAccessTokenBody) {
     baseURL: oauthV4BaseURL,
     headers: { secret_key },
   })
-}
-
-export function getCodeChallenge(code_verifier: string) {
-  return sha256base64(code_verifier)
 }

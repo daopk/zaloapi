@@ -32,7 +32,6 @@
     "@zaloapi/shared": "workspace:^"
   },
   "devDependencies": {
-    "ohash": "^1.1.2",
     "tsup": "^7.1.0"
   }
 }

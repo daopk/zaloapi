@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "form-data": "^4.0.0",
-    "ohash": "^1.1.2",
     "tsup": "^7.1.0"
   }
 }
