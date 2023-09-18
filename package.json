@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@daopk/eslint-config-ts": "^0.5.3",
-    "bumpp": "^9.1.1",
+    "bumpp": "^9.2.0",
     "eslint": "^8.49.0"
   }
 }
