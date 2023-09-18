@@ -14,8 +14,8 @@ export type ZaloOAListTemplatePayloadElementAction = {
 } | {
   type: 'oa.query.hide' | 'oa.query.show'
   /**
-         * Payload should be a string that starts with #
-         */
+   * Payload should be a string that starts with #
+   */
   payload: string
 } | {
   type: 'oa.open.phone'
@@ -32,8 +32,8 @@ export type ZaloOAListTemplatePayloadElementAction = {
 
 export type ZaloOAButtonTemplatePayloadElement = {
   /**
-     * Max length: 100
-     */
+   * Max length: 100
+   */
   title: string
 } & (
   | {

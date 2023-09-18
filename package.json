@@ -8,8 +8,8 @@
     "release": "pnpm bumpp && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@daopk/eslint-config-ts": "^0.4.0",
+    "@daopk/eslint-config-ts": "^0.5.3",
     "bumpp": "^9.1.1",
-    "eslint": "^8.45.0"
+    "eslint": "^8.49.0"
   }
 }
