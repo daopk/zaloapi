@@ -41,6 +41,7 @@ export function getOAQuotaMessage(access_token: string) {
     total: number
   }>>('quota/message', {
     baseURL: openapiV2BaseURL,
+    method: 'POST',
     headers: { access_token },
   })
 }
