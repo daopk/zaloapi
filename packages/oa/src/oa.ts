@@ -30,3 +30,17 @@ export function getOAProfile(access_token: string) {
     headers: { access_token },
   })
 }
+
+/**
+ * https://developers.zalo.me/docs/official-account/quan-ly/quan-ly-thong-tin-oa/lay-quota-tin-tu-van
+ */
+export function getOAQuotaMessage(access_token: string) {
+  return fetch<ZaloOAResponse<{
+    type: string
+    remain: number
+    total: number
+  }>>('quota/message', {
+    baseURL: openapiV2BaseURL,
+    headers: { access_token },
+  })
+}
