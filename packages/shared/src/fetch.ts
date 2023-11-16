@@ -5,7 +5,7 @@ import { HttpsProxyAgent } from 'https-proxy-agent'
 const proxyMap = new Map<string, HttpsProxyAgent<string>>()
 
 export async function fetch<T = any>(url: string, config: AxiosRequestConfig = {}) {
-  // eslint-disable-next-line n/prefer-global/process
+  // eslint-disable-next-line node/prefer-global/process
   const ZALOAPI_PROXY = process.env.ZALOAPI_PROXY
   let httpsAgent: HttpsProxyAgent<string> | undefined
 

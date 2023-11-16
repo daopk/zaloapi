@@ -3,7 +3,7 @@ import { fetch } from '@zaloapi/shared'
 import { openapiV2BaseURL } from './constant'
 import type { ZaloOAResponse } from './response'
 
-// eslint-disable-next-line n/prefer-global/buffer
+// eslint-disable-next-line node/prefer-global/buffer
 type FileType = Blob | File | Buffer
 
 export function uploadImage(access_token: string, file: FileType, filename: string) {
