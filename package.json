@@ -1,5 +1,6 @@
 {
   "name": "zaloapi-monorepo",
+  "type": "module",
   "private": true,
   "scripts": {
     "lint": "eslint .",
@@ -8,14 +9,9 @@
     "release": "pnpm bumpp && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@daopk/eslint-config-ignores": "1.0.0-beta.8",
-    "@daopk/eslint-config-imports": "1.0.0-beta.8",
-    "@daopk/eslint-config-javascript": "1.0.0-beta.8",
-    "@daopk/eslint-config-node": "1.0.0-beta.8",
-    "@daopk/eslint-config-stylistic": "1.0.0-beta.8",
-    "@daopk/eslint-config-typescript": "1.0.0-beta.8",
+    "@daopk/eslint-preset-ts": "1.0.0-beta.11",
     "bumpp": "^9.2.0",
-    "eslint": "^8.53.0",
-    "eslint-flat-config-viewer": "^0.1.1"
+    "eslint": "^8.54.0",
+    "eslint-flat-config-viewer": "^0.1.2"
   }
 }
