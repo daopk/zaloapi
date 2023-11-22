@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "form-data": "^4.0.0",
-    "tsup": "^7.3.0"
+    "tsup": "^8.0.1"
   }
 }

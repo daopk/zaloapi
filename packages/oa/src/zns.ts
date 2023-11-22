@@ -35,11 +35,11 @@ export type ZNSMessageTemplateResponse = ZaloOAResponse<{
   }
 }>
 
-export function getZNSTemplateInfo(access_token: string, templateId: string | number) {
+export function getZNSTemplateInfo(access_token: string, template_id: string | number) {
   return fetch<ZNSTemplateInfoResponse>('template/info', {
     baseURL: businessBaseURL,
     params: {
-      template_id: templateId,
+      template_id,
     },
     headers: {
       access_token,

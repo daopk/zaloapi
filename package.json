@@ -12,6 +12,6 @@
     "@daopk/eslint-preset-ts": "1.0.0-beta.11",
     "bumpp": "^9.2.0",
     "eslint": "^8.54.0",
-    "eslint-flat-config-viewer": "^0.1.2"
+    "eslint-flat-config-viewer": "^0.1.3"
   }
 }

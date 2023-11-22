@@ -32,6 +32,6 @@
     "@zaloapi/shared": "workspace:^"
   },
   "devDependencies": {
-    "tsup": "^7.3.0"
+    "tsup": "^8.0.1"
   }
 }

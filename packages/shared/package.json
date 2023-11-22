@@ -30,10 +30,10 @@
   },
   "devDependencies": {
     "@types/crypto-js": "^4.2.1",
-    "@types/node": "^20.9.1",
+    "@types/node": "^20.9.4",
     "axios": "^1.6.2",
     "crypto-js": "^4.2.0",
     "https-proxy-agent": "^7.0.2",
-    "tsup": "^7.3.0"
+    "tsup": "^8.0.1"
   }
 }
