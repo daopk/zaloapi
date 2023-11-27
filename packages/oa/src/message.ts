@@ -121,7 +121,8 @@ export interface ZaloOATransactionTemplatePayload {
   | 'transaction_booking'
   | 'transaction_membership'
   | 'transaction_event'
-  | 'transaction_transation'
+  | 'transaction_transation' // typo in Zalo docs, keep it for backward compatibility, will be removed in next major version
+  | 'transaction_transaction'
   | 'transaction_account'
   | 'transaction_internal'
   | 'transaction_partnership'
