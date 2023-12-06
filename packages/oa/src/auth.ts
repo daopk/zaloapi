@@ -16,11 +16,21 @@ export interface GetAccessTokenBodyFromAuthCode {
   code_verifier?: string
 }
 
-export interface GetAccessTokenResponse {
-  'access_token': string
-  'refresh_token': string
-  'expires_in': string
+export interface GetAccessTokenResponseSuccess {
+  access_token: string
+  refresh_token: string
+  expires_in: string
 }
+
+export interface GetAccessTokenResponseError {
+  error_name: string
+  error_reason: string
+  ref_doc: string
+  error_description: string
+  error: number
+}
+
+export type GetAccessTokenResponse = GetAccessTokenResponseSuccess | GetAccessTokenResponseError
 
 export type GetAccessTokenBody = GetAccessTokenBodyFromRefreshToken | GetAccessTokenBodyFromAuthCode
 
